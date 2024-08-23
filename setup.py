@@ -2,7 +2,7 @@ import re
 import os
 import setuptools
 
-ver = 'v0.1.5'
+ver = 'v1.3.7'
 
 with open("README.rst", "r", encoding="utf-8") as fh:
     long_desc = fh.read()
@@ -16,6 +16,7 @@ classify = [
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
 ]
@@ -27,13 +28,14 @@ requirements = [
     "opencv-python-headless",
     "yt_dlp",
     "requests",
+    "pyrogram",
 ]
 
 
 setuptools.setup(
     name="ethon",
     version=ver,
-    author="vasusen-code",
+    author="Mswpresents",
     description=desc,
     long_description=long_desc,
     long_description_content_type="text/markdown",
@@ -42,5 +44,5 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=requirements,
     classifiers=classify,
-    python_requires=">=3.6",
+    python_requires=">=3.8",
 )
